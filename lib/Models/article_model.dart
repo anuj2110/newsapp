@@ -6,7 +6,7 @@ class ArticleModel{
   String url;
   String urlToImage;
   String content;
-  DateTime publishedAt;
+  // DateTime publishedAt;
 
   ArticleModel(
     {
@@ -16,7 +16,7 @@ class ArticleModel{
       this.urlToImage,
       this.desc,
       this.content,
-      this.publishedAt
+      // this.publishedAt
     }
   );
 }

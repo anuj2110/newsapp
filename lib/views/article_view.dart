@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:NewsApp/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -15,24 +16,7 @@ class _ArticlViewState extends State<ArticlView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: <Widget>[
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 16),
-          )
-        ],
-        elevation: 0.0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("Flutter"),
-            Text(
-              "News",
-              style: TextStyle(color: Colors.blue),
-            )
-          ],
-        ),
-      ),
+      appBar: AppbarCenter(),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,

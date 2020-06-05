@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:NewsApp/views/article_view.dart';
+
 class CategoryTile extends StatelessWidget {
   final imageURL;
   final categoryName;
@@ -93,4 +94,41 @@ class BlogTile extends StatelessWidget {
       ),
     );
   }
+}
+
+PreferredSizeWidget Appbar() {
+  return AppBar(
+    elevation: 0.0,
+    title: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text("Flutter"),
+        Text(
+          "News",
+          style: TextStyle(color: Colors.blue),
+        )
+      ],
+    ),
+  );
+}
+
+PreferredSizeWidget AppbarCenter() {
+  return AppBar(
+    actions: <Widget>[
+      Container(
+        padding: EdgeInsets.symmetric(horizontal: 16),
+      )
+    ],
+    elevation: 0.0,
+    title: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text("Flutter"),
+        Text(
+          "News",
+          style: TextStyle(color: Colors.blue),
+        )
+      ],
+    ),
+  );
 }
